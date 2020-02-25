@@ -1,6 +1,10 @@
 {
     "name": "angularExplorer",
     "short_name": "angularExplorer",
+    "description": "Find the right commands you need without digging through the web.",
+    "browser_action": {
+        "default_title": "Agregá Angular Explorer a tus aplicaciones"
+    },
     "theme_color": "#f44336",
     "background_color": "#fafafa",
     "display": "standalone",
