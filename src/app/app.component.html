@@ -10,10 +10,10 @@
             <hr class="mb-4">
         </div>
         <div class="col-md-3">
-            <ng-select class="custom" placeholder="I want to" [(ngModel)]="topic" (change)="onChangeTopic($event)" [items]="topics" bindLabel="value" bindValue="id" [selectOnTab]="true"></ng-select>
+            <ng-select class="custom" role="combobox" placeholder="I want to" [(ngModel)]="topic" (change)="onChangeTopic($event)" [items]="topics" bindLabel="value" bindValue="id" [selectOnTab]="true"></ng-select>
         </div>
         <div class="col-md-3">
-            <ng-select class="custom" [(ngModel)]="action" (change)="onChangeAction($event)" [items]="actions" [readonly]="actions.length < 2" bindLabel="value" bindValue="id" [selectOnTab]="true" [hidden]="!topic"></ng-select>
+            <ng-select class="custom" role="combobox" [(ngModel)]="action" (change)="onChangeAction($event)" [items]="actions" [readonly]="actions.length < 2" bindLabel="value" bindValue="id" [selectOnTab]="true" [hidden]="!topic"></ng-select>
         </div>
         <div class="col-12 mt-4" *ngIf="usageCommand">
             <h4>Usage</h4>
